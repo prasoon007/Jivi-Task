@@ -45,8 +45,8 @@ const InputForm = (props: FormPayload) => {
         </header>
         <body>
             <div className='h-full w-full '>
-                <div className='flex gap-4 w-full px-6 flex-col mt-2'>
-                    <p className=''>Heart Rate</p>
+                <div className='flex gap-6 w-full px-6 flex-col mt-2'>
+                    <p className='font-bold text-sm'>Heart Rate</p>
                     <div className="w-full">
                         <input
                             type="range"
