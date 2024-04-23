@@ -19,7 +19,7 @@ interface DropdownProps {
 const Dropdown: React.FC<DropdownProps> = ({ id, label, value, onChange, options, iconSrc, handleDropdownChange, dropdownState }) => {
     return (
         <div className="relative h-min">
-            <label className="w-full mb-2 text-sm font-medium">
+            <label className="w-full mb-2 text-sm font-bold">
                 {label}
                 <span className="text-red-500">*</span>
             </label>

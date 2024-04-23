@@ -17,7 +17,7 @@ const InputField: React.FC<InputFieldProps> = ({ id, type, label, value, onChang
     return (
         <>
             <div className="relative">
-                <label className="w-full mb-2 mt-2 text-sm font-medium">
+                <label className="w-full mb-2 mt-2 text-sm font-bold">
                     {label}
                     <span className="text-red-500">*</span>
                 </label>

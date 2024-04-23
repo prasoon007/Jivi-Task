@@ -1,6 +1,7 @@
 import Dropdown from "components/DropDown/DropDown"
 import Header from "components/Header/Header";
 import InputField from "components/Input/Input"
+import RangeSlider from "components/Slider/Slider";
 import { ChangeEvent, Dispatch, useEffect, useState } from "react";
 import { classNames } from "utils";
 
@@ -45,23 +46,15 @@ const InputForm = (props: FormPayload) => {
         </header>
         <body>
             <div className='h-full w-full '>
-                <div className='flex gap-6 w-full px-6 flex-col mt-2'>
-                    <p className='font-bold text-sm'>Heart Rate</p>
-                    <div className="w-full">
-                        <input
-                            type="range"
-                            min="60"
-                            max="120"
-                            value={sliderValue}
-                            onChange={handleSliderChange}
-                            className="bg-gray-300 w-full rounded-full outline-none appearance-none bg-transparent [&::-webkit-slider-runnable-track]:rounded-full [&::-webkit-slider-runnable-track]:bg-red-500/25 [&::-webkit-slider-thumb]:appearance-none [&::-webkit-slider-thumb]:h-[24px] [&::-webkit-slider-thumb]:w-[24px] [&::-webkit-slider-thumb]:rounded-lg [&::-webkit-slider-thumb]:bg-blue-500"
-                        />
-                        <div className="flex justify-between mt-2 text-xs text-gray-600">
-                            <span className="w-8 text-left">60</span>
-                            <span className="w-8 text-center">80</span>
-                            <span className="w-8 text-center">100</span>
-                            <span className="w-8 text-center">120</span>
-                        </div>
+                <div className='flex gap-6 w-full px-6 flex-col mt-4'>
+                    <div>
+                        <p className='font-bold text-sm'>Heart Rate</p>
+                        <RangeSlider value={formData.hr} setValue={handleInputFieldChange} id='hr' />
+                    </div>
+                    <div className="flex flex-col gap-2">
+                        <p className='font-bold text-sm'>Blood Pressure</p>
+                        <RangeSlider value={formData.systollicBp} setValue={handleInputFieldChange} id='systollicBp' />
+                        <RangeSlider value={formData.diastollicBp} setValue={handleInputFieldChange} id='diastollicBp' />
                     </div>
                     <InputField
                         id="name"
