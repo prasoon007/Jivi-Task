@@ -6,30 +6,27 @@ interface FormPayload {
     setFormData: () => void
 }
 
-
 const SubmitSuccess = (props: FormPayload) => {
-    const { setFormStep, setFormData } = props
+    const { setFormStep, setFormData } = props;
 
-    return <>
-        <header>
-            <Header title="Success" />
-        </header>
-        <body>
-            <div className='h-full w-full items-center justify-center'>
-                <div className='flex w-full px-8 flex-col mt-[75%]'>
-                    <p className='text-lg font-semibold'>Thank you.</p>
-                    <p className='text-base'>Your details are saved successfully.</p>
+    return (
+        <>
+            <header>
+                <Header title="Success" />
+            </header>
+            <div className="h-full flex flex-col justify-center items-center">
+                <div className="w-full max-w-md px-6 mt-64">
+                    <p className="text-lg font-semibold">Thank you.</p>
+                    <p className="text-base">Your details are saved successfully.</p>
                 </div>
             </div>
-        </body>
-        <footer className="fixed bottom-0 w-full text-center my-5">
-            <div className="flex justify-center gap-4">
-                <button onClick={() => { setFormStep(1); setFormData() }} className="w-[90%] cursor-pointer hover:bg-[#0240ab] border h-[70px] disabled:bg-[#DCE1E8] bg-[#0F67FE] text-white rounded-lg">Submit Again</button>
-            </div>
-        </footer>
+            <footer className="fixed bottom-0 w-full text-center my-5">
+                <div className="flex justify-center">
+                    <button onClick={() => { setFormStep(1); setFormData() }} className="w-[90%] cursor-pointer hover:bg-[#0240ab] border h-[70px] disabled:bg-[#DCE1E8] bg-[#0F67FE] text-white rounded-lg">Submit Again</button>
+                </div>
+            </footer>
+        </>
+    );
+};
 
-    </>
-
-}
-
-export default SubmitSuccess
+export default SubmitSuccess;
