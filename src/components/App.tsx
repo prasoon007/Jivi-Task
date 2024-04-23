@@ -63,7 +63,6 @@ const App = () => {
     </>
   }
 
-
   let formComponent;
   switch (formSteps) {
     case 1:

@@ -16,7 +16,7 @@ const SubmitSuccess = (props: FormPayload) => {
         </header>
         <body>
             <div className='h-full w-full items-center justify-center'>
-                <div className='flex w-full px-8 flex-col mt-[60%]'>
+                <div className='flex w-full px-8 flex-col mt-[75%]'>
                     <p className='text-lg font-semibold'>Thank you.</p>
                     <p className='text-base'>Your details are saved successfully.</p>
                 </div>

@@ -70,7 +70,7 @@ const InputForm = (props: FormPayload) => {
                         value={formData?.name}
                         onChange={handleInputFieldChange}
                         placeholder="Please enter your name"
-                        iconSrc='/user-name.png'
+                        iconSrc='user-name.png'
                         required
                     />
                     <InputField
@@ -78,7 +78,7 @@ const InputForm = (props: FormPayload) => {
                         label="Date of Birth"
                         type="date"
                         value={formData?.dob}
-                        iconSrc='/calendar.png'
+                        iconSrc='calendar.png'
                         onChange={handleInputFieldChange}
                         placeholder="Select Date"
                         required
@@ -87,7 +87,7 @@ const InputForm = (props: FormPayload) => {
                         id="gender"
                         label="Gender"
                         value={formData?.gender}
-                        iconSrc='/gender.svg'
+                        iconSrc='gender.svg'
                         onChange={handleInputFieldChange}
                         handleDropdownChange={handleDropdownChange}
                         dropdownState={openDropdown}
