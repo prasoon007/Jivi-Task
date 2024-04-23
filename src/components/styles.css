@@ -22,13 +22,21 @@ input[type='range']::-webkit-slider-thumb {
   box-sizing: border-box;
   appearance: none;
   position: relative;
-  background-color: purple;
-  border: 2px solid white;
+  background-color: #0f67fe;
+  border: 4px solid #dfe7f0;
   border-radius: 8px;
   width: 24px;
   height: 24px;
   top: 50%;
   translate: 0 -50%;
+  box-shadow:
+    -5px 0px 0px 0px rgba(15, 103, 254, 0.09),
+    -10px 0px 0px 0px rgba(15, 103, 254, 0.085),
+    -15px 0px 0px 0px rgba(15, 103, 254, 0.08),
+    -20px 0px 0px 0px rgba(15, 103, 254, 0.075),
+    -25px 0px 0px 0px rgba(15, 103, 254, 0.07),
+    -25px 0px 0px 0px rgba(15, 103, 254, 0.065),
+    -25px 0px 0px 0px rgba(15, 103, 254, 0.06);
 }
 
 input[type='range']::-moz-range-thumb {
@@ -58,9 +66,7 @@ input[type='range']::-moz-range-progress {
 
 select {
   appearance: none;
-  /* safari */
   -webkit-appearance: none;
-  /* other styles for aesthetics */
   width: 100%;
   font-size: 1.15rem;
   padding: 0.675em 6em 0.675em 1em;
