@@ -22,9 +22,9 @@ const ConfirmForm = (props: FormPayload) => {
             <Header title="Confirm" />
         </header>
         <body>
-            <div className='h-screen w-full '>
-                <div className='flex gap-4 w-full px-8 flex-col mt-8'>
-                    <p className='text-lg'>Please confirm your details to continue.</p>
+            <div className='h-full w-full '>
+                <div className='flex gap-4 w-full px-8 flex-col mt-16'>
+                    <p className='text-lg font-semibold'>Please confirm your details to continue.</p>
                     <div className="flex items-center mt-4">
                         <p className="mr-2 font-bold">Heart Rate: </p>
                         <p className="">{formData.hr}</p>

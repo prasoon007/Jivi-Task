@@ -44,7 +44,7 @@ const InputForm = (props: FormPayload) => {
             <Header title="Details" />
         </header>
         <body>
-            <div className='h-screen w-full '>
+            <div className='h-full w-full '>
                 <div className='flex gap-4 w-full px-6 flex-col mt-2'>
                     <p className=''>Heart Rate</p>
                     <div className="w-full">
