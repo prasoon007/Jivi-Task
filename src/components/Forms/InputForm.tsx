@@ -49,12 +49,12 @@ const InputForm = (props: FormPayload) => {
                 <div className='flex gap-6 w-full px-6 flex-col mt-4'>
                     <div>
                         <p className='font-bold text-sm'>Heart Rate</p>
-                        <RangeSlider value={formData.hr} setValue={handleInputFieldChange} id='hr' />
+                        <RangeSlider value={formData.hr} setValue={handleInputFieldChange} id='hr' min="60" max="120" />
                     </div>
                     <div className="flex flex-col gap-2">
                         <p className='font-bold text-sm'>Blood Pressure</p>
-                        <RangeSlider value={formData.systollicBp} setValue={handleInputFieldChange} id='systollicBp' />
-                        <RangeSlider value={formData.diastollicBp} setValue={handleInputFieldChange} id='diastollicBp' />
+                        <RangeSlider value={formData.systollicBp} setValue={handleInputFieldChange} id='systollicBp' min="120" max="150" />
+                        <RangeSlider value={formData.diastollicBp} setValue={handleInputFieldChange} id='diastollicBp' min="60" max="80" />
                     </div>
                     <InputField
                         id="name"
