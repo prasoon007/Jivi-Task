@@ -1,0 +1,73 @@
+input[type='range'] {
+  appearance: none;
+  background-color: transparent;
+  width: 100%;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  position: relative;
+  height: 8px;
+  background-color: #dce1e8;
+  border-radius: 8px;
+}
+
+input[type='range']::-moz-range-track {
+  position: relative;
+  height: 8px;
+  background-color: #dce1e8;
+  border-radius: 8px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  box-sizing: border-box;
+  appearance: none;
+  position: relative;
+  background-color: purple;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  translate: 0 -50%;
+}
+
+input[type='range']::-moz-range-thumb {
+  box-sizing: border-box;
+  appearance: none;
+  position: relative;
+  background-color: purple;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+input[type='range']::-moz-range-progress {
+  height: 8px;
+  background-color: orangered;
+  border-radius: 8px;
+}
+
+.date-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.custom-select {
+  min-width: 350px;
+}
+
+select {
+  appearance: none;
+  /* safari */
+  -webkit-appearance: none;
+  /* other styles for aesthetics */
+  width: 100%;
+  font-size: 1.15rem;
+  padding: 0.675em 6em 0.675em 1em;
+  background-color: #fff;
+  border: 1px solid #caced1;
+  border-radius: 0.25rem;
+  color: #000;
+  cursor: pointer;
+  position: relative !important;
+}
